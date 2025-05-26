@@ -52177,6 +52177,7 @@ ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/list.dart + ../../.
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/live_region.dart + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/menus.dart + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/platform_view.dart + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/progress_bar.dart + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/requirable.dart + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/route.dart + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/lib/web_ui/lib/src/engine/semantics/scrollable.dart + ../../../flutter/LICENSE
@@ -55191,6 +55192,7 @@ FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/list.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/live_region.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/menus.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/platform_view.dart
+FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/progress_bar.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/requirable.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/route.dart
 FILE: ../../../flutter/lib/web_ui/lib/src/engine/semantics/scrollable.dart
