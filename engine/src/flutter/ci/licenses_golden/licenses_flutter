@@ -52710,6 +52710,8 @@ ORIGIN: ../../../flutter/shell/platform/common/flutter_platform_node_delegate.h 
 ORIGIN: ../../../flutter/shell/platform/common/geometry.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/incoming_message_dispatcher.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/incoming_message_dispatcher.h + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/common/isolate_scope.cc + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/common/isolate_scope.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/json_message_codec.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/json_message_codec.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/json_method_codec.cc + ../../../flutter/LICENSE
@@ -52730,6 +52732,7 @@ ORIGIN: ../../../flutter/shell/platform/common/text_input_model.cc + ../../../fl
 ORIGIN: ../../../flutter/shell/platform/common/text_input_model.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/common/text_range.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/common/InternalFlutterSwiftCommon-Bridging-Header.h + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/common/windowing.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/common/availability_version_check.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/common/availability_version_check.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/common/buffer_conversions.h + ../../../flutter/LICENSE
@@ -53002,6 +53005,9 @@ ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterVie
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewEngineProviderTest.mm + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewProvider.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewTest.mm + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowController.h + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowController.mm + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowControllerTest.mm + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMap.g.mm + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMapTest.mm + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMap_Internal.h + ../../../flutter/LICENSE
@@ -53457,6 +53463,10 @@ ORIGIN: ../../../flutter/shell/platform/windows/external_texture_d3d.h + ../../.
 ORIGIN: ../../../flutter/shell/platform/windows/external_texture_pixelbuffer.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/windows/external_texture_pixelbuffer.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/windows/flutter_desktop_messenger.h + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/windows/flutter_host_window.cc + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/windows/flutter_host_window.h + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/windows/flutter_host_window_controller.cc + ../../../flutter/LICENSE
+ORIGIN: ../../../flutter/shell/platform/windows/flutter_host_window_controller.h + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/windows/flutter_key_map.g.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/windows/flutter_platform_node_delegate_windows.cc + ../../../flutter/LICENSE
 ORIGIN: ../../../flutter/shell/platform/windows/flutter_platform_node_delegate_windows.h + ../../../flutter/LICENSE
@@ -55737,6 +55747,8 @@ FILE: ../../../flutter/shell/platform/common/flutter_platform_node_delegate.h
 FILE: ../../../flutter/shell/platform/common/geometry.h
 FILE: ../../../flutter/shell/platform/common/incoming_message_dispatcher.cc
 FILE: ../../../flutter/shell/platform/common/incoming_message_dispatcher.h
+FILE: ../../../flutter/shell/platform/common/isolate_scope.cc
+FILE: ../../../flutter/shell/platform/common/isolate_scope.h
 FILE: ../../../flutter/shell/platform/common/json_message_codec.cc
 FILE: ../../../flutter/shell/platform/common/json_message_codec.h
 FILE: ../../../flutter/shell/platform/common/json_method_codec.cc
@@ -55759,6 +55771,7 @@ FILE: ../../../flutter/shell/platform/common/text_range.h
 FILE: ../../../flutter/shell/platform/darwin/common/InternalFlutterSwiftCommon-Bridging-Header.h
 FILE: ../../../flutter/shell/platform/darwin/common/SwiftTestingMain.swift
 FILE: ../../../flutter/shell/platform/darwin/common/SwiftTestingRunner.swift
+FILE: ../../../flutter/shell/platform/common/windowing.h
 FILE: ../../../flutter/shell/platform/darwin/common/availability_version_check.cc
 FILE: ../../../flutter/shell/platform/darwin/common/availability_version_check.h
 FILE: ../../../flutter/shell/platform/darwin/common/buffer_conversions.h
@@ -56041,6 +56054,9 @@ FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewE
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewEngineProviderTest.mm
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewProvider.h
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterViewTest.mm
+FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowController.h
+FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowController.mm
+FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/FlutterWindowControllerTest.mm
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMap.g.mm
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMapTest.mm
 FILE: ../../../flutter/shell/platform/darwin/macos/framework/Source/KeyCodeMap_Internal.h
@@ -56502,6 +56518,10 @@ FILE: ../../../flutter/shell/platform/windows/external_texture_d3d.h
 FILE: ../../../flutter/shell/platform/windows/external_texture_pixelbuffer.cc
 FILE: ../../../flutter/shell/platform/windows/external_texture_pixelbuffer.h
 FILE: ../../../flutter/shell/platform/windows/flutter_desktop_messenger.h
+FILE: ../../../flutter/shell/platform/windows/flutter_host_window.cc
+FILE: ../../../flutter/shell/platform/windows/flutter_host_window.h
+FILE: ../../../flutter/shell/platform/windows/flutter_host_window_controller.cc
+FILE: ../../../flutter/shell/platform/windows/flutter_host_window_controller.h
 FILE: ../../../flutter/shell/platform/windows/flutter_key_map.g.cc
 FILE: ../../../flutter/shell/platform/windows/flutter_platform_node_delegate_windows.cc
 FILE: ../../../flutter/shell/platform/windows/flutter_platform_node_delegate_windows.h
