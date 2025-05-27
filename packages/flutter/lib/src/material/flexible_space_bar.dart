@@ -11,6 +11,7 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/foundation.dart' show clampDouble;
 import 'package:flutter/rendering.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 import 'package:flutter/widgets.dart';
 
 import 'colors.dart';
@@ -333,7 +334,7 @@ class _FlexibleSpaceBarState extends State<FlexibleSpaceBar> {
               begin: widget.expandedTitleScale,
               end: 1.0,
             ).transform(t);
-            final Matrix4 scaleTransform = Matrix4.identity()..scale(scaleValue, scaleValue, 1.0);
+            final Matrix4 scaleTransform = Matrix4.identity()..scaleD(scaleValue, scaleValue, 1.0);
             final Alignment titleAlignment = _getTitleAlignment(effectiveCenterTitle);
             children.add(
               Padding(

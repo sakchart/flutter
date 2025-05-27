@@ -15,6 +15,7 @@ import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 import 'package:flutter/widgets.dart';
 
 import 'button_style.dart';
@@ -1604,8 +1605,8 @@ class _RenderDecoration extends RenderBox
       final double dy = lerpDouble(0.0, floatingY - labelOffset.dy, t)!;
       _labelTransform =
           Matrix4.identity()
-            ..translate(dx, labelOffset.dy + dy)
-            ..scale(scale);
+            ..translateD(dx, labelOffset.dy + dy)
+            ..scaleD(scale);
       layer = context.pushTransform(
         needsCompositing,
         offset,
@@ -1636,7 +1637,7 @@ class _RenderDecoration extends RenderBox
       final Offset labelOffset = _boxParentData(label!).offset;
       transform
         ..multiply(_labelTransform!)
-        ..translate(-labelOffset.dx, -labelOffset.dy);
+        ..translateD(-labelOffset.dx, -labelOffset.dy);
     }
     super.applyPaintTransform(child, transform);
   }

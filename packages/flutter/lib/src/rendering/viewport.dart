@@ -15,6 +15,7 @@ import 'dart:math' as math;
 import 'package:flutter/animation.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/semantics.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'box.dart';
 import 'debug.dart';
@@ -2087,7 +2088,7 @@ class RenderShrinkWrappingViewport extends RenderViewportBase<SliverLogicalConta
   void applyPaintTransform(RenderObject child, Matrix4 transform) {
     // Hit test logic relies on this always providing an invertible matrix.
     final Offset offset = paintOffsetOf(child as RenderSliver);
-    transform.translate(offset.dx, offset.dy);
+    transform.translateD(offset.dx, offset.dy);
   }
 
   @override

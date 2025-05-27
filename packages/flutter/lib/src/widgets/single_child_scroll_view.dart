@@ -11,6 +11,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/gestures.dart' show DragStartBehavior;
 import 'package:flutter/rendering.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'basic.dart';
 import 'focus_manager.dart';
@@ -576,7 +577,7 @@ class _RenderSingleChildViewport extends RenderBox
   @override
   void applyPaintTransform(RenderBox child, Matrix4 transform) {
     final Offset paintOffset = _paintOffset;
-    transform.translate(paintOffset.dx, paintOffset.dy);
+    transform.translateD(paintOffset.dx, paintOffset.dy);
   }
 
   @override

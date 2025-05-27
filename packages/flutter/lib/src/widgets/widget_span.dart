@@ -10,6 +10,7 @@ import 'dart:ui' as ui show ParagraphBuilder, PlaceholderAlignment;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'basic.dart';
 import 'framework.dart';
@@ -420,7 +421,7 @@ class _RenderScaledInlineWidget extends RenderBox with RenderObjectWithChildMixi
 
   @override
   void applyPaintTransform(RenderBox child, Matrix4 transform) {
-    transform.scale(scale, scale);
+    transform.scaleD(scale);
   }
 
   @override

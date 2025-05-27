@@ -11,6 +11,7 @@ import 'dart:ui' show ImageFilter;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 import 'package:flutter/widgets.dart';
 
 import 'button.dart';
@@ -1742,7 +1743,7 @@ class _RenderLargeTitle extends RenderShiftedBox {
 
     super.applyPaintTransform(child, transform);
 
-    transform.scale(_scale, _scale);
+    transform.scaleD(_scale);
   }
 
   @override
@@ -1776,8 +1777,8 @@ class _RenderLargeTitle extends RenderShiftedBox {
 
     final Matrix4 transform =
         Matrix4.identity()
-          ..scale(1.0 / _scale, 1.0 / _scale, 1.0)
-          ..translate(-childOffset.dx, -childOffset.dy);
+          ..scaleD(1.0 / _scale, 1.0 / _scale, 1.0)
+          ..translateD(-childOffset.dx, -childOffset.dy);
 
     return result.addWithRawTransform(
       transform: transform,
@@ -2357,7 +2358,7 @@ class _BackChevron extends StatelessWidget {
     switch (textDirection) {
       case TextDirection.rtl:
         iconWidget = Transform(
-          transform: Matrix4.identity()..scale(-1.0, 1.0, 1.0),
+          transform: Matrix4.identity()..scaleD(-1.0, 1.0, 1.0),
           alignment: Alignment.center,
           transformHitTests: false,
           child: iconWidget,

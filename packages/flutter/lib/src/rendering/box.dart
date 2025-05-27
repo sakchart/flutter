@@ -17,8 +17,7 @@ import 'dart:ui' as ui show ViewConstraints, lerpDouble;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
-
-import 'package:vector_math/vector_math_64.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'debug.dart';
 import 'object.dart';
@@ -3037,7 +3036,7 @@ abstract class RenderBox extends RenderObject {
     }());
     final BoxParentData childParentData = child.parentData! as BoxParentData;
     final Offset offset = childParentData.offset;
-    transform.translate(offset.dx, offset.dy);
+    transform.translateD(offset.dx, offset.dy);
   }
 
   /// Convert the given point from the global coordinate system in logical pixels

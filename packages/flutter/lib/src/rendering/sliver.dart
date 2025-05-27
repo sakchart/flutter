@@ -17,6 +17,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'box.dart';
 import 'debug.dart';
@@ -1135,7 +1136,7 @@ class SliverPhysicalParentData extends ParentData {
   /// [SliverPhysicalParentData].
   void applyPaintTransform(Matrix4 transform) {
     // Hit test logic relies on this always providing an invertible matrix.
-    transform.translate(paintOffset.dx, paintOffset.dy);
+    transform.translateD(paintOffset.dx, paintOffset.dy);
   }
 
   @override
@@ -1913,12 +1914,12 @@ mixin RenderSliverHelpers implements RenderSliver {
         if (!rightWayUp) {
           delta = geometry!.paintExtent - child.size.width - delta;
         }
-        transform.translate(delta, crossAxisDelta);
+        transform.translateD(delta, crossAxisDelta);
       case Axis.vertical:
         if (!rightWayUp) {
           delta = geometry!.paintExtent - child.size.height - delta;
         }
-        transform.translate(crossAxisDelta, delta);
+        transform.translateD(crossAxisDelta, delta);
     }
   }
 }

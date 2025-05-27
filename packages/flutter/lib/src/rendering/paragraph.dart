@@ -25,6 +25,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/semantics.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'box.dart';
 import 'debug.dart';
@@ -248,7 +249,7 @@ mixin RenderInlineChildrenContainerDefaults
     if (offset == null) {
       transform.setZero();
     } else {
-      transform.translate(offset.dx, offset.dy);
+      transform.translateD(offset.dx, offset.dy);
     }
   }
 

@@ -21,6 +21,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/semantics.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
+
 
 import 'binding.dart';
 import 'debug.dart';
@@ -780,7 +782,7 @@ class PaintingContext extends ClipContext {
     final Matrix4 effectiveTransform =
         Matrix4.translationValues(offset.dx, offset.dy, 0.0)
           ..multiply(transform)
-          ..translate(-offset.dx, -offset.dy);
+          ..translateD(-offset.dx, -offset.dy);
     if (needsCompositing) {
       final TransformLayer layer = oldLayer ?? TransformLayer();
       layer.transform = effectiveTransform;

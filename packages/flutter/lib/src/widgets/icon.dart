@@ -10,6 +10,7 @@ library;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'basic.dart';
 import 'debug.dart';
@@ -334,7 +335,7 @@ class Icon extends StatelessWidget {
       switch (textDirection) {
         case TextDirection.rtl:
           iconWidget = Transform(
-            transform: Matrix4.identity()..scale(-1.0, 1.0, 1.0),
+            transform: Matrix4.identity()..scaleD(-1.0, 1.0, 1.0),
             alignment: Alignment.center,
             transformHitTests: false,
             child: iconWidget,

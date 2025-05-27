@@ -11,6 +11,7 @@ import 'dart:math' as math show max;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'actions.dart';
 import 'basic.dart';
@@ -542,7 +543,7 @@ class _RawAutocompleteState<T extends Object> extends State<RawAutocomplete<T>> 
       OptionsViewOpenDirection.down => overlayRectInField.bottom - optionsViewBoundingBox.height,
     };
 
-    final Matrix4 transform = layoutInfo.childPaintTransform.clone()..translate(0.0, originY);
+    final Matrix4 transform = layoutInfo.childPaintTransform.clone()..translateD(0.0, originY);
     final Widget child = Builder(
       builder: (BuildContext context) => widget.optionsViewBuilder(context, _select, _options),
     );

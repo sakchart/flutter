@@ -21,6 +21,7 @@ import 'dart:collection';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter/src/matrix_4_ext.dart';
 
 import 'basic.dart';
 import 'framework.dart';
@@ -2547,7 +2548,7 @@ final class _RenderDeferredLayoutBox extends RenderProxyBox
   void applyPaintTransform(RenderBox child, Matrix4 transform) {
     final BoxParentData childParentData = child.parentData! as BoxParentData;
     final Offset offset = childParentData.offset;
-    transform.translate(offset.dx, offset.dy);
+    transform.translateD(offset.dx, offset.dy);
   }
 }
 
@@ -2663,7 +2664,7 @@ class _RenderLayoutBuilder extends RenderProxyBox
   void applyPaintTransform(RenderBox child, Matrix4 transform) {
     final BoxParentData childParentData = child.parentData! as BoxParentData;
     final Offset offset = childParentData.offset;
-    transform.translate(offset.dx, offset.dy);
+    transform.translateD(offset.dx, offset.dy);
   }
 
   @protected
